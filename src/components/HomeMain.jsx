@@ -62,7 +62,7 @@ export default function HomeMain() {
     <div style={{display:"flex",flexDirection:"column"}}>
       <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Recomended For You</h3>
      <div>
-     <Slider {...settings}>
+     <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -150,7 +150,7 @@ export default function HomeMain() {
     <div>
     <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Must Watch Hollywood</h3>
     
-    <Slider {...settings}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -238,7 +238,7 @@ export default function HomeMain() {
     <div>
     <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
-    <Slider {...settings}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -331,7 +331,7 @@ export default function HomeMain() {
       </div>
     </Slider>
      </div>
-      <div style={{position:"relative"}}>
+      <div style={{position:"relative", marginBottom:"50px"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S01E001AR/KAAINAATY2023S01E001AR-hero-v2-en.jpg"
           position="absolute" top="0" left="0" height="750" width="100%" />
       
@@ -346,7 +346,7 @@ export default function HomeMain() {
           </div>
               <div style={{position:"absolute",top: "598px", left: "1px"}}>
                 
-                      <Slider {...settings}>
+                      <Slider {...settings} className="home-slider">
       
                           <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
                           textAlign:"center",display:"flex",flexDirection:"column"}}>
@@ -392,8 +392,8 @@ export default function HomeMain() {
 
      
       <h3 style={{textAlign:"left",marginLeft:"15px",color:"white",fontSize:"18px"}}>Explore More</h3>
-    
-    <Slider {...settings}>
+    <div style={{marginBottom:"24px"}}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -450,11 +450,11 @@ export default function HomeMain() {
        
       </div>
     </Slider>
-     
+     </div>
      
      <h3 style={{textAlign:"left",marginLeft:"15px",color:"white",fontSize:"18px"}}>Your Next Watch</h3>
     
-    <Slider {...settings}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -550,7 +550,7 @@ export default function HomeMain() {
     
      <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
-    <Slider {...settings}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
@@ -642,7 +642,7 @@ export default function HomeMain() {
      
      <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
-    <Slider {...settings}>
+    <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
        textAlign:"center"}}>
