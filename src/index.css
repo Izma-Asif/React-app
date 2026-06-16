@@ -1,7 +1,7 @@
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #ffffff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -55,11 +55,9 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -109,3 +107,26 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+html, body, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background: #f0f0f0;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+.slick-slide > div{
+  padding: 0 0px;
+}
+.slick-list {
+  margin: 0 -10px; 
+}
+.slick-track {
+    display: flex;
+    gap: 10px; 
+  }
