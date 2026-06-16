@@ -130,3 +130,6 @@ html, body, #root {
     display: flex;
     gap: 10px; 
   }
+.home-slider {
+  margin-bottom: 20px;
+}
