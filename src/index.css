@@ -132,4 +132,5 @@ html, body, #root {
   }
 .home-slider {
   margin-bottom: 20px;
+  position:"relative";
 }

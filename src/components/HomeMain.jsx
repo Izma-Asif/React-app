@@ -26,25 +26,26 @@ function SampleNextArrow(props) {
       </div>
   );
 }
-// function SamplePrevArrow(props) {
-//   const { onClick } = props;
-//   return (
-//     <div
-//       className="PrevArrow"
-//       style={{display: "block", background: "none",
-//         position: "absolute",
-//         top: "60%",
-//         left: "10px",
-//         transform: "translateX(-50%)",
-//         height: "30px",
-//         width: "30px"}}
-//       onClick={onClick}
-//       >
-//         <img src={Right} height="20" width="20"/>
-//       </div>
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      className="PrevArrow"
+      style={{display: "block", background: "none",
+        position: "absolute",
+        top: "50%",
+        left: "10px",
+        transform: "translateY(-50%)",
+        height: "30px",
+        zIndex:"80",
+        width: "30px"}}
+      onClick={onClick}
+      >
+        <img src={Left} height="20" width="20"/>
+      </div>
     
-//   );
-// }
+  );
+}
 
 export default function HomeMain() {
   
@@ -55,16 +56,16 @@ export default function HomeMain() {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
-    // prevArrow: <SamplePrevArrow />,
+    prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
   };
   return (
-    <div style={{display:"flex",flexDirection:"column"}}>
+    <div style={{display:"flex",flexDirection:"column",position:"relative"}}>
       <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Recomended For You</h3>
      <div>
      <Slider {...settings} className="home-slider">
       
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODFRANKIEMEETSJACKY2023M/AVODFRANKIEMEETSJACKY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -73,7 +74,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-screenmedia-avod/AVODINFIDELITYINSUBURBIAY2017M/AVODINFIDELITYINSUBURBIAY2017M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -82,7 +83,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-teleproginternational-avod/AVODCRANK2Y2009M/AVODCRANK2Y2009M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -91,7 +92,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-frontrow-avod/AVODHAJWALA2Y2018MAR/AVODHAJWALA2Y2018MAR-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -100,7 +101,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODLOVEOFFTHEPAGEY2022M/AVODLOVEOFFTHEPAGEY2022M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -109,7 +110,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODJOHNNYENGLISHSTRIKESAGAINY2018M/AVODJOHNNYENGLISHSTRIKESAGAINY2018M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -118,7 +119,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODTERMINATOR2JUDGMENTDAYY1991M/AVODTERMINATOR2JUDGMENTDAYY1991M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -127,7 +128,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-phoenicia-avod/AVODFEARBELOWY2025M/AVODFEARBELOWY2025M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -136,7 +137,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-ingest-fox-avod/AVODTHEWEDDINGCONTRACTY2023M/AVODTHEWEDDINGCONTRACTY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -152,7 +153,7 @@ export default function HomeMain() {
     
     <Slider {...settings} className="home-slider">
       
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODFRANKIEMEETSJACKY2023M/AVODFRANKIEMEETSJACKY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -161,7 +162,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Newly Added</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-screenmedia-avod/AVODINFIDELITYINSUBURBIAY2017M/AVODINFIDELITYINSUBURBIAY2017M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -170,7 +171,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-teleproginternational-avod/AVODCRANK2Y2009M/AVODCRANK2Y2009M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -179,7 +180,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Newly Added</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-frontrow-avod/AVODHAJWALA2Y2018MAR/AVODHAJWALA2Y2018MAR-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -188,7 +189,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODLOVEOFFTHEPAGEY2022M/AVODLOVEOFFTHEPAGEY2022M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -197,7 +198,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODJOHNNYENGLISHSTRIKESAGAINY2018M/AVODJOHNNYENGLISHSTRIKESAGAINY2018M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -206,7 +207,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODTERMINATOR2JUDGMENTDAYY1991M/AVODTERMINATOR2JUDGMENTDAYY1991M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -215,7 +216,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-phoenicia-avod/AVODFEARBELOWY2025M/AVODFEARBELOWY2025M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -224,7 +225,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-ingest-fox-avod/AVODTHEWEDDINGCONTRACTY2023M/AVODTHEWEDDINGCONTRACTY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -240,7 +241,7 @@ export default function HomeMain() {
     
     <Slider {...settings} className="home-slider">
       
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODFRANKIEMEETSJACKY2023M/AVODFRANKIEMEETSJACKY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -249,7 +250,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-screenmedia-avod/AVODINFIDELITYINSUBURBIAY2017M/AVODINFIDELITYINSUBURBIAY2017M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -258,7 +259,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Newly Added</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-teleproginternational-avod/AVODCRANK2Y2009M/AVODCRANK2Y2009M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -271,7 +272,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Exclusive</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-frontrow-avod/AVODHAJWALA2Y2018MAR/AVODHAJWALA2Y2018MAR-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -280,7 +281,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODLOVEOFFTHEPAGEY2022M/AVODLOVEOFFTHEPAGEY2022M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -293,7 +294,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Exclusive</span>
         </div>
       </div>
-      <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+      <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODJOHNNYENGLISHSTRIKESAGAINY2018M/AVODJOHNNYENGLISHSTRIKESAGAINY2018M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -302,7 +303,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODTERMINATOR2JUDGMENTDAYY1991M/AVODTERMINATOR2JUDGMENTDAYY1991M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -311,7 +312,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-phoenicia-avod/AVODFEARBELOWY2025M/AVODFEARBELOWY2025M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -320,7 +321,7 @@ export default function HomeMain() {
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
-     <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
+     <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
        textAlign:"center"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-ingest-fox-avod/AVODTHEWEDDINGCONTRACTY2023M/AVODTHEWEDDINGCONTRACTY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
@@ -615,7 +616,7 @@ export default function HomeMain() {
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-canal-avod/AVODTERMINATOR2JUDGMENTDAYY1991M/AVODTERMINATOR2JUDGMENTDAYY1991M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
         <div style={{position:"relative",top: "-140px", left: "-95px"}}>
-          <span style={{color:"black",background:"cyan", borderRadius: "17px",fontSize:"19px",
+          <span style={{color:"black",background:"cyan", borderRadius: "17px",fontSize:"9px",
             fontWeight:"bold",paddingTop:'2px',paddingBottom:"5px",paddingLeft:"5px",paddingRight:"5px"}}>Free</span>
         </div>
       </div>
