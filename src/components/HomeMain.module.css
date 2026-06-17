@@ -1,0 +1,48 @@
+.Home_main_div{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    column-gap:10px;
+}
+.PrevArrow{
+    opacity: 0;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    z-index: 10;
+    border-radius: 50%;
+   
+}
+.PrevArrow:hover{
+   opacity: 1.0;
+}
+.NextArrow{
+    opacity: 0;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+     border-radius: 50%;
+     
+}
+.NextArrow:hover{
+   opacity: 1.0;
+}
+
+.main_cont{
+    margin-left:20px;
+    border-radius:40px;
+    position: absolute;
+    
+    text-align:center;
+}
+

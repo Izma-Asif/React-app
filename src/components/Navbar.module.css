@@ -1,0 +1,51 @@
+.Navbar_main_div{
+    display: flex; 
+    align-items: center;
+    /* flex-direction:row; */
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    gap:20px;
+    /* position:relative; */
+    padding-left: 15px;
+    padding-right:18px;
+    height: 60px;
+    /* padding-inline: 40px; */
+}
+.Starzplay_logo_div{
+   padding-top: 6px;
+    
+}
+ .Nav_list{
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    max-height: 497px;
+    
+}
+.nav_elem_main{
+    font-weight: normal;
+    color: white;
+    text-decoration:none;
+    font-size:11px;
+    border-block-start:solid;
+    padding-bottom:4px;
+    padding-top:10px;
+}
+.nav_elems{
+    font-weight: normal;
+    color: white;
+    text-decoration:none;
+    font-size:11px;
+    padding-bottom:15px;
+    padding-top:12.5px;
+}
+.nav_elems:hover{
+    font-weight: normal;
+    color: white;
+    text-decoration:none;
+    font-size:11px;
+    border-block-start:solid;
+    padding-bottom:15px;
+    padding-top:10px;
+}
