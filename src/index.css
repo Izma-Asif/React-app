@@ -34,7 +34,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #121111;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -122,15 +122,18 @@ html, body, #root {
 }
 .slick-slide > div{
   padding: 0 0px;
+  height: 160px; 
 }
 .slick-list {
-  margin: 0 -10px; 
+  /* margin: 0 -10px;  */
+  
 }
 .slick-track {
     display: flex;
-    gap: 10px; 
+    /* gap: 10px;  */
   }
 .home-slider {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position:"relative";
+
 }

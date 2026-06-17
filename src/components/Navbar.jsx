@@ -2,36 +2,39 @@ import React from "react";
 import Logo from "../assets/Starzplaylogo.png"
 import DownArrow from "../assets/down-arrow.png"
 import profile from "../assets/Profile.png"
+import Search from "../assets/search-icon.png"
+import styles from './Navbar.module.css';
 
 const Navbar= () =>{
     return(
-        <div style={{display: 'flex', alignItems: 'center',
-                     padding: '15px 20px', backgroundColor: '#1a1a1a',
-                     borderBottom: '1px solid rgba(255,255,255,0.1)',gap:'20px',
-                     }}>
-            <div style={{gap:'30px'}}>
-              <img src={Logo} height="32" width="200"/>
-            </div>
-            <div style={{display:'flex',gap:'15px'}}>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px",borderBlockStart:'solid' }}>HOME</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>LIVE</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>WATCH FREE</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>SPORTS</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>ADMN</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>MOVIES</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>SERIES</a>
-            <a href="#" style={{ fontWeight: "normal", color: "white",textDecoration:"none",fontSize:"11px"  }}>KIDS</a>
-            </div>
+        <div className={styles.Navbar_main_div}>
+          <div style={{display:"flex",gap:"30px",justifyContent:"center",alignItems:"center"}}>
+                <div className={styles.Starzplay_logo_div}>
+                <img src={Logo} height="32" width="200"/>
+                </div>
+                <div className={styles.Nav_list}>
+                <a  className={styles.nav_elem_main} href="#" >HOME</a>
+                <a href="#" className={styles.nav_elems}>🔴LIVE</a>
+                <a href="#" className={styles.nav_elems}>WATCH FREE</a>
+                <a href="#" className={styles.nav_elems}>SPORTS</a>
+                <a href="#" className={styles.nav_elems}>ADMN</a>
+                <a href="#" className={styles.nav_elems}>MOVIES</a>
+                <a href="#" className={styles.nav_elems}>SERIES</a>
+                <a href="#" className={styles.nav_elems}>KIDS</a>
+                </div>
+          </div>
             <div style={{flex:1}}>
             </div>
             <div>
                 <button type='button' style={{background:'cyan',fontWeight:'bold', color:'Black',border:'none',padding:'8px',borderRadius:'15px'}}>Subscribe Now</button>
             </div>
             <div>
-                <button type='button'style={{background:'none', border:'none',fontSize:'20px'}}>🔍</button>
+                <button type='button'style={{background:"none",border:'none',postion:"absolute",marginTop:"5px"}}>
+                    <img src={Search} height="auto" width="30"/>
+                </button>
             </div>
              <div>
-                <button type='button'style={{background:'none',fontWeight:'bold', border:'none',fontSize:'13px'}}>LOGIN</button>
+                <button type='button'style={{background:'none',fontWeight:'bold', border:'none',fontSize:'13px',postion:"absolute",marginTop:"-20px",paddingBottom:"10px"}}>LOGIN</button>
             </div>
             <div style={{position:"relative"}} >
              

@@ -9,50 +9,50 @@ import googleplay from "../assets/googleplay.png"
 
 const Footer = () =>{
  return(
-    <footer style={{minheight:"300px",display:"flex",flexDirection:"column", alignitems:"center", gap:"25px",borderTop: "1px solid rgba(255, 255, 255, 0.1)"}}>
-        <div className="social-tags" style={{ display: "flex",justifyContent:"center", gap: "20px", alignItems: "center" }}>
+    <footer style={{gap:"18px",minheight:"300px",marginBottom:"30px",display:"flex",flexDirection:"column", alignitems:"center",borderTop: "1px solid rgba(255, 255, 255, 0.1)"}}>
+        <div className="social-tags" style={{ display: "flex",justifyContent:"center", gap: "20px", alignItems: "center",marginTop:"20px",marginBottom:"-4px" }}>
            <a href="#">
             <img src={facebook} height="auto" width="45"/>
            </a>
             <a href="#">
-            <img src={twitter} height="auto" width="45"/>
+            <img src={twitter} height="auto" width="40"/>
            </a>
             <a href="#">
-            <img src={insta} height="auto" width="45"/>
+            <img src={insta} height="auto" width="40"/>
            </a>
             <a href="#">
-            <img src={youtube} height="auto" width="45"/>
+            <img src={youtube} height="auto" width="40"/>
            </a>
         </div>
-        <div style={{display:"flex",alignitems:"center",justifyContent:"center", gap:"20px"}}>
-            <p style={{color:"white"}}>Why STARZPLAY?</p>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px" }}>Live</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Watch Free</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Sports</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>ADMN</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Movies</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Series</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Kids</a>
+        <div style={{display:"flex",alignitems:"center",justifyContent:"center", gap:"34px"}}>
+            <p style={{color:"white",fontSize:"14px"}}>Why STARZPLAY?</p>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px" }}>Live</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>Watch Free</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>Sports</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>ADMN</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>Movies</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>Series</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"14px"  }}>Kids</a>
         </div>
-        <div style={{display:"flex",alignitems:"center",justifyContent:"center", gap:"20px"}}>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>FAQ</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Terms & Conditions</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Contact Us</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>Privacy Policy</a>
-            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"17px"  }}>About Us</a>
+        <div style={{display:"flex",alignitems:"center",justifyContent:"center", gap:"28px"}}>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"15px"  }}>FAQ</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"15px"  }}>Terms & Conditions</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"15px"  }}>Contact Us</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"15px"  }}>Privacy Policy</a>
+            <a href="#" style={{ fontWeight: "bold", color: "white",textDecoration:"none",fontSize:"15px"  }}>About Us</a>
         </div>
         <div>
-            <p style={{color:"gray"}}>Copyright © 2026 STARZPLAY. All rights reserved.</p>
+            <p style={{color:"rgba(255,255,255,0.8)",fontSize:"14px"}}>Copyright © 2026 STARZPLAY. All rights reserved.</p>
         </div>
         <div style={{display:"flex",alignitems:"center",justifyContent:"center", gap:"10px"}}>
             <a href="#">
-            <img src={Appleicon} height="50" width="200"/>
+            <img src={Appleicon} height="auto" width="130"/>
             </a>
              <a href="#">
-            <img src={googleplay} height="50" width="200"/>
+            <img src={googleplay} height="auto" width="130"/>
             </a>
              <a href="#">
-            <img src={Appgallery} height="50" width="200"/>
+            <img src={Appgallery} height="auto" width="130"/>
             </a>
         </div>
     </footer>

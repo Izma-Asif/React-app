@@ -3,26 +3,18 @@ import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Slider = SlickSlider && SlickSlider.default ? SlickSlider.default : SlickSlider;
-import Right from "../assets/circle-right-arrow.png"
-import Left from "../assets/circle-left-arrow.png"
+import Right from "../assets/arrow1.png"
+import Left from "../assets/arrow2.png"
+import styles from './HomeMain.module.css';
 
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="NextArrow"
-      style={{ display: "block",
-        background: "none",
-        position: "absolute",
-        top: "50%",
-        right: "10px",
-        transform: "translateY(-50%)",
-        height: "30px",
-        width: "30px"
-         }}
+      className={styles.NextArrow}
       onClick={onClick}
     >
-      <img src={Right} height="20" width="20"/>
+      <img src={Right} height="10" width="10"/>
       </div>
   );
 }
@@ -30,18 +22,10 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="PrevArrow"
-      style={{display: "block", background: "none",
-        position: "absolute",
-        top: "50%",
-        left: "10px",
-        transform: "translateY(-50%)",
-        height: "30px",
-        zIndex:"80",
-        width: "30px"}}
+      className={styles.PrevArrow}
       onClick={onClick}
       >
-        <img src={Left} height="20" width="20"/>
+        <img src={Left} height="10" width="10"/>
       </div>
     
   );
@@ -52,7 +36,7 @@ export default function HomeMain() {
   var settings = {
     dots: false,
     arrows:true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -60,13 +44,13 @@ export default function HomeMain() {
     nextArrow: <SampleNextArrow />,
   };
   return (
-    <div style={{display:"flex",flexDirection:"column",position:"relative"}}>
-      <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Recomended For You</h3>
-     <div>
+    <div className={styles.Home_main_div}>
+      <h3 style={{textAlign:"left",marginLeft:"30px",color:"white",fontSize:"18px"}}>Recomended For You</h3>
+     <div style={{marginLeft:"20px"}}>
      <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "absolute",
-       textAlign:"center"}}>
+       textAlign:"center"}} >
         <img src="https://mena-img-cdn-lb.aws.playco.com/ev-evision-avod/AVODFRANKIEMEETSJACKY2023M/AVODFRANKIEMEETSJACKY2023M-landscape-poster-v2.jpg"
         height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
         <div style={{position:"relative",top: "-140px", left: "-95px"}}>
@@ -148,7 +132,7 @@ export default function HomeMain() {
       </div>
     </Slider>
     </div>
-    <div>
+    <div style={{marginLeft:"20px"}}>
     <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Must Watch Hollywood</h3>
     
     <Slider {...settings} className="home-slider">
@@ -236,7 +220,7 @@ export default function HomeMain() {
       </div>
     </Slider>
     </div>
-    <div>
+    <div style={{marginLeft:"20px"}}>
     <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
     <Slider {...settings} className="home-slider">
@@ -332,7 +316,7 @@ export default function HomeMain() {
       </div>
     </Slider>
      </div>
-      <div style={{position:"relative", marginBottom:"50px"}}>
+      <div style={{position:"relative", marginBottom:"50px",width:"100%"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S01E001AR/KAAINAATY2023S01E001AR-hero-v2-en.jpg"
           position="absolute" top="0" left="0" height="750" width="100%" />
       
@@ -346,9 +330,7 @@ export default function HomeMain() {
               </span>
           </div>
               <div style={{position:"absolute",top: "598px", left: "1px"}}>
-                
-                      <Slider {...settings} className="home-slider">
-      
+                <Slider {...settings} className="home-slider">
                           <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
                           textAlign:"center",display:"flex",flexDirection:"column"}}>
                             <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S02E001AR/KAAINAATY2023S02E001AR-landscape-poster-v2.jpg"
@@ -384,16 +366,16 @@ export default function HomeMain() {
                             height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
                             
                           </div>
-                       
-                        </Slider>
+                       </Slider>
+                        
                 
                  
               </div>
         </div>
 
-     
-      <h3 style={{textAlign:"left",marginLeft:"15px",color:"white",fontSize:"18px"}}>Explore More</h3>
-    <div style={{marginBottom:"24px"}}>
+     <div style={{marginTop:"-13px"}}>
+      <h3 style={{textAlign:"left",marginLeft:"30px",color:"white",fontSize:"18px"}}>Explore More</h3>
+    <div style={{marginBottom:"24px",marginLeft:"20px"}}>
     <Slider {...settings} className="home-slider">
       
       <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
@@ -452,7 +434,8 @@ export default function HomeMain() {
       </div>
     </Slider>
      </div>
-     
+     </div>
+     <div style={{marginLeft:"20px",marginTop:"-16px"}}>
      <h3 style={{textAlign:"left",marginLeft:"15px",color:"white",fontSize:"18px"}}>Your Next Watch</h3>
     
     <Slider {...settings} className="home-slider">
@@ -547,8 +530,9 @@ export default function HomeMain() {
         </div>
       </div>
     </Slider>
+    </div>
     
-    
+    <div style={{marginLeft:"20px",marginTop:"6px"}}>
      <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
     <Slider {...settings} className="home-slider">
@@ -639,8 +623,9 @@ export default function HomeMain() {
         </div>
       </div>
     </Slider>
+     </div>
      
-     
+     <div style={{marginLeft:"20px",marginTop:"6px"}}>
      <h3 style={{textAlign:"left",marginLeft:"10px",color:"white",fontSize:"18px"}}>Watch For Free</h3>
     
     <Slider {...settings} className="home-slider">
@@ -727,7 +712,7 @@ export default function HomeMain() {
         </div>
       </div>
     </Slider>
-    
+    </div>
     </div>
 
     
