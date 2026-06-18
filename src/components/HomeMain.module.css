@@ -18,7 +18,7 @@
     border-radius: 50%;
    
 }
-.PrevArrow:hover{
+.slick-track:hover{
    opacity: 1.0;
 }
 .NextArrow{
@@ -34,15 +34,17 @@
      border-radius: 50%;
      
 }
-.NextArrow:hover{
-   opacity: 1.0;
+.style_slider:hover .NextArrow{
+   opacity: 1;
+}
+.style_slider:hover .PrevArrow{
+   opacity: 1;
 }
 
 .main_cont{
     margin-left:20px;
     border-radius:40px;
     position: absolute;
-    
     text-align:center;
 }
 

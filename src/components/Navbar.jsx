@@ -10,7 +10,7 @@ const Navbar= () =>{
         <div className={styles.Navbar_main_div}>
           <div style={{display:"flex",gap:"30px",justifyContent:"center",alignItems:"center"}}>
                 <div className={styles.Starzplay_logo_div}>
-                <img src={Logo} height="32" width="200"/>
+                <img src={Logo} height="auto" width="160"/>
                 </div>
                 <div className={styles.Nav_list}>
                 <a  className={styles.nav_elem_main} href="#" >HOME</a>
