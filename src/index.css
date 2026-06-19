@@ -112,6 +112,8 @@ html, body, #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  background-color: #121111;
 }
 
 .item {
@@ -123,17 +125,28 @@ html, body, #root {
 .slick-slide > div{
   padding: 0 0px;
   height: 160px; 
+  /* overflow: hidden !important; */
+   z-index: 1;
+   
+}
+.slick-slider{
+  overflow: visible;
 }
 .slick-list {
   /* margin: 0 -10px;  */
-  
+  /* overflow:  hidden ; */
+   overflow:visible !important ;
 }
 .slick-track {
     display: flex;
     /* gap: 10px;  */
+     overflow:visible !important ;
   }
+
+
 .home-slider {
   /* margin-bottom: 20px; */
   position:"relative";
+   /* overflow: unset; */
 
 }

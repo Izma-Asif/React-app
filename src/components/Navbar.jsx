@@ -34,7 +34,7 @@ const Navbar= () =>{
                 </button>
             </div>
              <div>
-                <button type='button'style={{background:'none',fontWeight:'bold', border:'none',fontSize:'13px',postion:"absolute",marginTop:"-20px",paddingBottom:"10px"}}>LOGIN</button>
+                <button type='button'style={{background:'none',fontWeight:'bold', border:'none',fontSize:'13px',postion:"absolute",marginTop:"-20px",paddingBottom:"10px",color:'white'}}>LOGIN</button>
             </div>
             <div style={{position:"relative"}} >
              
