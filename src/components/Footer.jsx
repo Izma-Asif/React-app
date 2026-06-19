@@ -11,16 +11,16 @@ const Footer = () =>{
  return(
     <footer style={{gap:"18px",minheight:"300px",marginBottom:"30px",display:"flex",flexDirection:"column", alignitems:"center",borderTop: "1px solid rgba(255, 255, 255, 0.1)"}}>
         <div className="social-tags" style={{ display: "flex",justifyContent:"center", gap: "20px", alignItems: "center",marginTop:"20px",marginBottom:"-4px" }}>
-           <a href="#">
+           <a href="https://www.facebook.com/starzplay">
             <img src={facebook} height="auto" width="45"/>
            </a>
-            <a href="#">
+            <a href="https://x.com/starzplayarabiao">
             <img src={twitter} height="auto" width="40"/>
            </a>
-            <a href="#">
+            <a href="https://www.instagram.com/starzplayarabia">
             <img src={insta} height="auto" width="40"/>
            </a>
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UClTDlkKVmMDOaQ7YTyAlruw/featured">
             <img src={youtube} height="auto" width="40"/>
            </a>
         </div>
