@@ -1,0 +1,159 @@
+.facebook{
+  height:auto;
+  width:45px;
+}
+.twitter{
+  height:auto;
+  width:40px;
+}
+.insta{
+  height:auto;
+  width:40px;
+}
+.youtube{
+  height:auto;
+  width:40px;
+}
+.ftag1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:34px;
+}
+.wstar{
+    color:white;
+    font-size:14px;
+}
+.ftag1 a{
+    font-weight: bold;
+    color: white;
+    text-decoration:none;
+    font-size:14px;
+}
+.ftag2{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:28px;
+}
+.ftag2 a{
+    font-weight: bold;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+.copyright{
+    color:rgba(255,255,255,0.8);
+    font-size:14px;
+}
+.ftag3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+.ftag31 img{
+    height:auto;
+    width:130px;
+        
+}
+.ftag32 img{
+    height:auto;
+    width:130px;
+        
+}
+.ftag33 img{
+    height:auto;
+    width:130px;
+        
+}
+@media screen and (max-width:866px){
+ .facebook{
+  height:auto;
+  width:35px;
+}
+.twitter{
+  height:auto;
+  width:33px;
+}
+.insta{
+  height:auto;
+  width:33px;
+}
+.youtube{
+  height:auto;
+  width:33px;
+}
+.ftag1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    row-gap: 7px;
+    flex-wrap:wrap ;
+}
+.wstar{
+    color:white;
+    font-size:12px;
+    margin-left:20px;
+}
+.ftag1 a{
+    font-weight: 670;
+    color: white;
+    text-decoration:none;
+    font-size:12px;
+    margin-right: 11px;
+}
+.ftag2{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:5px;
+ flex-wrap: wrap;
+ row-gap: 7px;
+}
+.ftag2 a{
+    font-weight: 660;
+    color:white;
+    text-decoration:none;
+    font-size:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.copyright{
+    color:rgba(255,255,255,0.8);
+    font-size:10px;
+}
+.ftag31 img{
+    height:auto;
+    width:110px;
+        
+}
+.ftag32 img{
+    height:auto;
+    width:110px;
+        
+}
+.ftag33 img{
+    height:auto;
+    width:110px;
+        
+}
+}
+@media  screen and (max-width:370px){
+.ftag31 img{
+    height:auto;
+    width:80px;
+        
+}
+.ftag32 img{
+    height:auto;
+    width:80px;
+        
+}
+.ftag33 img{
+    height:auto;
+    width:80px;
+        
+}
+}

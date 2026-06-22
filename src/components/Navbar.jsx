@@ -3,19 +3,27 @@ import Logo from "../assets/Starzplaylogo.png"
 import DownArrow from "../assets/down-arrow.png"
 import profile from "../assets/Profile.png"
 import Search from "../assets/search-icon.png"
+import hamburger from "../assets/hamburger-menu.png"
 import styles from './Navbar.module.css';
 
 const Navbar= () =>{
     return(
         <div className={styles.Navbar_main_div}>
           <div style={{display:"flex",gap:"30px",justifyContent:"center",alignItems:"center"}}>
+                    
+                <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
+                <label htmlFor="menu-toggle" className={styles.hamburger}>
+                    <img src={hamburger} height="30" width="48" />
+                </label>
+                    
                 <div className={styles.Starzplay_logo_div}>
-                <img src={Logo} height="auto" width="160"/>
+                <img src={Logo}/>
                 </div>
                 <div className={styles.Nav_list}>
+                 
                 <a  className={styles.nav_elem_main} href="#" >HOME</a>
                 <a href="#" className={styles.nav_elems}>🔴LIVE</a>
-                <a href="#" className={styles.nav_elems}>WATCH FREE</a>
+                {/* <a href="#" className={styles.nav_elems}>WATCH FREE</a> */}
                 <a href="#" className={styles.nav_elems}>SPORTS</a>
                 <a href="#" className={styles.nav_elems}>ADMN</a>
                 <a href="#" className={styles.nav_elems}>MOVIES</a>
@@ -25,28 +33,30 @@ const Navbar= () =>{
           </div>
             <div style={{flex:1}}>
             </div>
-            <div>
+            <div className={styles.subbtn}>
                 <button type='button' style={{background:'cyan',fontWeight:'bold', color:'Black',border:'none',padding:'8px',borderRadius:'15px'}}>Subscribe Now</button>
             </div>
-            <div>
-                <button type='button'style={{background:"none",border:'none',postion:"absolute",marginTop:"5px"}}>
-                    <img src={Search} height="auto" width="30"/>
+            <div className={styles.search}>
+                <button className={styles.searchbtn} type='button'>
+                    <img src={Search} />
                 </button>
             </div>
-             <div>
+             <div className={styles.loginbtn}>
                 <button type='button'style={{background:'none',fontWeight:'bold', border:'none',fontSize:'13px',postion:"absolute",marginTop:"-20px",paddingBottom:"10px",color:'white'}}>LOGIN</button>
             </div>
-            <div style={{position:"relative"}} >
+            <div className={styles.profile}  >
              
-                 <button type='button' style={{background:'none', border:'none'}}>
-                    <img src={profile} height="40" width="40" /> 
+                 <button className={styles.profilebtn}type='button'>
+                    <img src={profile} /> 
                 </button>     
                 
-                <div style={{position:"absolute",top:"13px",left:"48px"}}>
-                     <img src={DownArrow} height="auto" width="20" /> 
+                <div className={styles.downarrow}>
+                     <img src={DownArrow} /> 
                 </div>
             </div>
+           
         </div>
+        
     )
 }
 export default Navbar

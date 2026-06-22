@@ -42,10 +42,35 @@ export default function HomeMain() {
     slidesToScroll: 3,
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
+    responsive:[
+      { 
+       breakpoint: 1040,
+        settings:{
+             slidesToShow: 4, 
+              slidesToScroll: 2,
+              infinite: false,   
+              arrows: true,
+              prevArrow: <SamplePrevArrow />,
+              nextArrow: <SampleNextArrow />,
+                  
+        }
+      },{
+      breakpoint: 800,
+        settings:{
+            arrows:true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            prevArrow: <SamplePrevArrow />,
+            nextArrow: <SampleNextArrow />,
+        }
+      }
+    ]
   };
   return (
     <div className={styles.Home_main_div}>
-      <h3 style={{textAlign:"left",marginLeft:"30px",color:"white",fontSize:"18px"}}>Recomended For You</h3>
+     
+      <h3 style={{textAlign:"left",marginLeft:"30px",color:"white",fontSize:"18px",display:"block",marginTop:"80px"}}>Recomended For You</h3>
      <div style={{marginLeft:"20px",paddingRight:'20px'}}>
      <Slider {...settings} className={styles.style_slider}>
       
@@ -617,19 +642,17 @@ export default function HomeMain() {
      </div>
       <div style={{position:"relative", marginBottom:"50px",width:"100%"}}>
         <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S01E001AR/KAAINAATY2023S01E001AR-hero-v2-en.jpg"
-          position="absolute" top="0" left="0" height="750" width="100%" />
+           className={styles.picbanner}/>
       
-          <div style={{position:"absolute",top: "500px", left: "4px"}}>
-            <span style={{color:"white",background:"none", borderRadius: "17px",fontSize:"50px",
-              fontWeight:"bold",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Kaa'inaat (Creatures)</span>
+          <div className={styles.pictext1}>
+            <span>Kaa'inaat (Creatures)</span>
           </div>
-          <div style={{position:"absolute",top: "550px", left: "6px"}}>
-            <span style={{color:"white",background:"none", borderRadius: "17px",fontSize:"21px",
-              fontWeight:"normal",paddingTop:'2px',paddingBottom:"2px",paddingLeft:"3px",paddingRight:"3px"}}>Check out the main characters and enjoy the new season
+          <div className={styles.pictext2}>
+            <span >Check out the main characters and enjoy the new season
               </span>
           </div>
               <div style={{position:"absolute",top: "598px", left: "1px"}}>
-                <Slider {...settings} className={styles.style_slider}>
+                <Slider {...settings} className={styles.style_slider1}>
                           <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
                           textAlign:"center",display:"flex",flexDirection:"column"}}>
                             <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S02E001AR/KAAINAATY2023S02E001AR-landscape-poster-v2.jpg"
