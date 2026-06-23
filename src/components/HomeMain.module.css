@@ -34,18 +34,17 @@
     border-radius: 50%;
      
 }
-.style_slider{
-    /* overflow-x: hidden;
-    overflow-y: visible; */
-      /* margin-top: 24px;
-      margin-bottom: 24px; */
-      
-}
 .style_slider:hover .NextArrow{
    opacity: 1;
 }
 .style_slider:hover .PrevArrow{
    opacity: 1;
+}
+.imagecarousal{
+   height:140px;
+   width:240px;
+   border-radius: 12px;
+   margin-left:10px;
 }
 
 .main_cont{
@@ -220,8 +219,102 @@
     padding-bottom:2px;
     padding-left:3px;
     padding-right:3px;
+}
+@media screen and (max-width:360px) {
+   .picbanner{
+    top:0px;
+    left:0px;
+    height:380px;
+    width:100%;
  }
- @media screen and (max-width:1040px){
+ .card_div{
+        display:none;
+}
+.style_slider1 {
+    display:none;
+}
+.pictext1{
+  position:absolute;
+    top: 330px;
+    left: 4px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:26px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 355px;
+    left: 6px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:12px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+
+}
+@media screen and (min-width:375px){
+   .picbanner{
+    top:0px;
+    left:0px;
+    height:380px;
+    width:100%;
+ }
+ .card_div{
+        display:none;
+}
+.style_slider1 {
+    display:none;
+}
+.pictext1{
+  position:absolute;
+    top: 330px;
+    left: 4px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:26px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 355px;
+    left: 6px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:12px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+
+}
+ @media screen and (min-width:1040px){
 .card_div{
         display:none;
 }
@@ -229,8 +322,6 @@
     display:none;
 }
 
- }
- @media screen and (max-width:1040px){
 .picbanner{
     top:0px;
     left:0px;
@@ -270,7 +361,7 @@
     padding-right:3px;
  }
  }
- @media screen and (max-width:650px){
+ @media screen and (min-width:650px){
 .picbanner{
     top:0px;
     left:0px;
@@ -311,16 +402,16 @@
  }
  }
 
- @media screen and (max-width:400px){
+ @media screen and (min-width:400px){
 .picbanner{
     top:0px;
     left:0px;
-    height:600px;
+    height:460px;
     width:100%;
  }
  .pictext1{
   position:absolute;
-    top: 543px;
+    top: 400px;
     left: 4px;
  }
  .pictext1 span{
@@ -336,14 +427,280 @@
  }
  .pictext2{
     position:absolute;
-    top: 570px;
+    top: 430px;
     left: 6px;
  }
  .pictext2 span{
     color:white;
     background:none;
     border-radius: 17px;
-    font-size:12px;
+    font-size:14px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:768px){
+   .pictext1{
+  position:absolute;
+    top: 394px;
+    left: 4px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:40px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 430px;
+    left: 6px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:19px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:1024px){
+   .picbanner{
+    top:0px;
+    left:0px;
+    height:600px;
+    width:100%;
+ }
+   .pictext1{
+  position:absolute;
+    top: 385px;
+    left: 8px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:43px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 428px;
+    left: 10px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:21px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:912px){
+   .pictext1{
+  position:absolute;
+    top: 385px;
+    left: 8px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:43px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 428px;
+    left: 10px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:21px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:344px){
+   .card_div{
+        display:none;
+}
+.style_slider1 {
+    display:none;
+}
+
+.picbanner{
+    top:0px;
+    left:0px;
+    height:400px;
+    width:100%;
+ }
+ .pictext1{
+  position:absolute;
+    top: 350px;
+    left: 4px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:24px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 370px;
+    left: 6px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:10px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+  @media screen and (min-width:853px){
+   .pictext1{
+  position:absolute;
+    top: 335px;
+    left: 8px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:43px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 370px;
+    left: 10px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:21px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:540px){
+   .pictext1{
+  position:absolute;
+    top: 345px;
+    left: 8px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:30px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 375px;
+    left: 10px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:15px;
+    font-weight:normal;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ }
+ @media screen and (min-width:1280px){
+.style_slider1{
+   display:block;
+}
+   .picbanner{
+    top:0px;
+    left:0px;
+    height:750px;
+    width:100%;
+ }
+   .pictext1{
+  position:absolute;
+    top: 530px;
+    left: 8px;
+ }
+ .pictext1 span{
+    color:white;
+    background:none;
+    border-radius:17px;
+    font-size:50px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+ }
+ .pictext2{
+    position:absolute;
+    top: 570px;
+    left: 10px;
+ }
+ .pictext2 span{
+    color:white;
+    background:none;
+    border-radius: 17px;
+    font-size:21px;
     font-weight:normal;
     padding-top:2px;
     padding-bottom:2px;

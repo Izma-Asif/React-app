@@ -656,7 +656,7 @@ export default function HomeMain() {
                           <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
                           textAlign:"center",display:"flex",flexDirection:"column"}}>
                             <img src="https://mena-img-cdn-lb.aws.playco.com/admn-ingest-inhouse/KAAINAATY2023S02E001AR/KAAINAATY2023S02E001AR-landscape-poster-v2.jpg"
-                            height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}}  />
+                            height="140" width="240" style={{ borderRadius: '12px',marginLeft:"10px"}} />
                           </div>
                           <div style={{marginLeft:"20px",borderRadius:"40px",position: "relative",
                           textAlign:"center"}}>
