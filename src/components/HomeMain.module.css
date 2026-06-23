@@ -666,6 +666,9 @@
  }
  }
  @media screen and (min-width:1280px){
+.card_div{
+   display: block;
+}
 .style_slider1{
    display:block;
 }
