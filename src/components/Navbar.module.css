@@ -181,7 +181,7 @@ margin-right: -14px;
     border-block-start: 0cap;
 }
 }
-@media screen and (min-width:768px) and (max-width:853px){
+@media screen and (min-width:768px) and (max-width:992px){
 .loginbtn{
     display: none;
 }
@@ -246,10 +246,13 @@ margin-right: -14px;
     border-block-start: 0cap;
 }
 }
-@media screen and (min-width:854px) and (max-width:1000px){
+@media screen and (min-width:993px) and (max-width:1199px){
 .loginbtn{
     display: none;
 }
+.subbtn{
+    display: none;
+ }
 .searchbtn{
 background:none;
 border:none;
@@ -311,19 +314,19 @@ margin-right: -14px;
     border-block-start: 0cap;
 }
 }
-@media screen and (max-width:1041px){
+/* @media screen and (max-width:1041px){
  .subbtn{
     display: none;
  }
+} */
+@media screen and (min-width:320px){
+.loginbtn{
+    display: none;
 }
-@media screen and (min-width:1280px){
+}
+@media screen and (min-width:1200px){
  .loginbtn{
     display: block;
  }
 
-}
-@media screen and (max-width:360px){
-.loginbtn{
-    display: none;
-}
 }

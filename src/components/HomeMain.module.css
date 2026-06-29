@@ -12,8 +12,8 @@
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    height: 30px;
-    width: 30px;
+    height: 1.7rem;
+    width: 1.7rem;
     z-index: 10;
     border-radius: 50%;
    
@@ -29,8 +29,8 @@
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    height: 30px;
-    width: 30px;
+    height: 1.7rem;
+    width: 1.7rem;
     border-radius: 50%;
      
 }
@@ -38,6 +38,12 @@
    opacity: 1;
 }
 .style_slider:hover .PrevArrow{
+   opacity: 1;
+}
+.style_slider1:hover .NextArrow{
+   opacity: 1;
+}
+.style_slider1:hover .PrevArrow{
    opacity: 1;
 }
 .imagecarousal{
@@ -220,7 +226,7 @@
     padding-left:3px;
     padding-right:3px;
 }
-@media screen and (max-width:360px) {
+@media screen and (min-width:320px) {
    .picbanner{
     top:0px;
     left:0px;
@@ -267,142 +273,9 @@
  }
 
 }
-@media screen and (min-width:375px){
-   .picbanner{
-    top:0px;
-    left:0px;
-    height:380px;
-    width:100%;
- }
- .card_div{
-        display:none;
-}
-.style_slider1 {
-    display:none;
-}
-.pictext1{
-  position:absolute;
-    top: 330px;
-    left: 4px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:26px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 355px;
-    left: 6px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:12px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
 
-}
- @media screen and (min-width:1040px){
-.card_div{
-        display:none;
-}
-.style_slider1 {
-    display:none;
-}
 
-.picbanner{
-    top:0px;
-    left:0px;
-    height:600px;
-    width:100%;
- }
- .pictext1{
-  position:absolute;
-    top: 520px;
-    left: 4px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:50px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 565px;
-    left: 6px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:21px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
- @media screen and (min-width:650px){
-.picbanner{
-    top:0px;
-    left:0px;
-    height:600px;
-    width:100%;
- }
- .pictext1{
-  position:absolute;
-    top: 540px;
-    left: 4px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:30px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 570px;
-    left: 6px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:15px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
-
- @media screen and (min-width:400px){
+ @media screen and (min-width:480px){
 .picbanner{
     top:0px;
     left:0px;
@@ -476,13 +349,8 @@
     padding-right:3px;
  }
  }
- @media screen and (min-width:1024px){
-   .picbanner{
-    top:0px;
-    left:0px;
-    height:600px;
-    width:100%;
- }
+ 
+ @media screen and (min-width:992px){
    .pictext1{
   position:absolute;
     top: 385px;
@@ -516,156 +384,8 @@
     padding-right:3px;
  }
  }
- @media screen and (min-width:912px){
-   .pictext1{
-  position:absolute;
-    top: 385px;
-    left: 8px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:43px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 428px;
-    left: 10px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:21px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
- @media screen and (min-width:344px){
-   .card_div{
-        display:none;
-}
-.style_slider1 {
-    display:none;
-}
-
-.picbanner{
-    top:0px;
-    left:0px;
-    height:400px;
-    width:100%;
- }
- .pictext1{
-  position:absolute;
-    top: 350px;
-    left: 4px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:24px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 370px;
-    left: 6px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:10px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
-  @media screen and (min-width:853px){
-   .pictext1{
-  position:absolute;
-    top: 335px;
-    left: 8px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:43px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 370px;
-    left: 10px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:21px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
- @media screen and (min-width:540px){
-   .pictext1{
-  position:absolute;
-    top: 345px;
-    left: 8px;
- }
- .pictext1 span{
-    color:white;
-    background:none;
-    border-radius:17px;
-    font-size:30px;
-    font-weight:bold;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- .pictext2{
-    position:absolute;
-    top: 375px;
-    left: 10px;
- }
- .pictext2 span{
-    color:white;
-    background:none;
-    border-radius: 17px;
-    font-size:15px;
-    font-weight:normal;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:3px;
-    padding-right:3px;
- }
- }
- @media screen and (min-width:1280px){
+ 
+ @media screen and (min-width:1200px){
 .card_div{
    display: block;
 }
