@@ -135,6 +135,7 @@ html, body, #root {
 .slick-list {
   /* margin: 0 -10px;  */
   /* overflow:  hidden ; */
+  
    overflow:visible !important ;
 }
 .slick-track {
@@ -165,7 +166,6 @@ html, body, #root {
 }
 .slick-track {
     display: flex;
-    /* gap: 10px;  */
      overflow:visible !important ;
      min-width: 100%;
   }
@@ -186,7 +186,6 @@ html, body, #root {
 }
 .slick-track {
     display: flex;
-    /* gap: 10px;  */
      overflow:visible !important ;
      min-width: 100%;
   }
